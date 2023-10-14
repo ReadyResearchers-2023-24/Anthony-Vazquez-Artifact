@@ -46,10 +46,13 @@
 * Bringing my website to life.
   - After I have succesfully implemented my mountain of data correctly and efficiently, I will have to publish my website to the streamlit     servers so it can be accessed for public use. Once this is complete, I, along with anybody else who is curious, will be able to access      the data and see for themselves what carbon emissions and energy use really means.
     
-- On paper, these are three simple steps, but thes steps will be taking places over months of research and implementation that will          eventually lead to my final product.
+* On paper, these are three simple steps, but thes steps will be taking places over months of research and implementation that will          eventually lead to my final product.
 
 
 ## How do I plan to use this application in the future? Where will I take it?
 
 * I would like it to be open for public use.
-  - I want anyone to be able to look for themselves what my project is about, and hopefully, it can inspire people to be more mindful about the things that they use every single day. Ultimately, I would like my project to include a feature where people will be able to add in their own profiles of appliances, vehicles, and services that they use so that they can see how their carbon footprints anfd energy uses compare to averages in their area. This holds people directly accountable for what they are doing, and since they can see exactly how much they would be affecting things themselves, hopefully that would invoke change.
+  - I want anyone to be able to look for themselves what my project is about, and hopefully, it can inspire people to be more mindful about    the things that they use every single day. Ultimately, I would like my project to include a feature where people will be able to add in     their own profiles of appliances, vehicles, and services that they use so that they can see how their carbon footprints anfd energy uses    compare to averages in their area. This holds people directly accountable for what they are doing, and since they can see exactly how       much they would be affecting things themselves, hopefully that would invoke change.
+ 
+* It will be a project I will likely follow up on and enhance as much as possible.
+  - If I would like this project to have the impact that I envision, then it will need more time for development and hopefully future use.     Hopefully it could one day even help hold coorporations accountable for the emissions and toxins that are being put into the air every      single day. There is endless room for improvement for this project as it can be applied on multiplw geographic or environmental levels.
