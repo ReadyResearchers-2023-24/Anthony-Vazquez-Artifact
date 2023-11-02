@@ -1,9 +1,5 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
-import random as rd
-
-DATE_COLUMN = 'date/time'
 
 data_load_state = st.text('Loading data...')
 total_data = pd.read_csv('data/total_emissions_global_2019.csv', dtype={"Year": str}, nrows=36)
