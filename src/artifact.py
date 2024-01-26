@@ -19,19 +19,19 @@ if st.toggle('Show raw data for total global C02 emissions from 1751-2019'):
     st.subheader('Raw data(million metric tons of C)')
     st.write(global_data)
 
-st.subheader('Line chart of global emissions from 1751 to 2019.')
+st.subheader('Line chart of global emissions from 1751 to 2019(metric tons of C).')
 if st.checkbox('Global Carbon Emissions by fossil fuel(Line Chart)'):
     df = pd.read_csv('data/emissions_global_1751_2019.csv', dtype={"Year": str})
     chart_data = pd.DataFrame(df, columns=["Year", "Emissions fossil fuel", "Emissions solid fuel", "Emissions liquid fuel", "Emissions gas fuel", "Emissions cement production", "Emissions gas flaring", "Emissions per capita(metric tons of carbon)"])
     st.line_chart(chart_data, x="Year", y=["Emissions fossil fuel", "Emissions solid fuel", "Emissions liquid fuel", "Emissions gas fuel", "Emissions cement production", "Emissions gas flaring", "Emissions per capita(metric tons of carbon)"])
 
-st.subheader('Bar chart of global emissions from 1751 to 2019.')
+st.subheader('Bar chart of global emissions from 1751 to 2019(metric tons of C).')
 if st.checkbox('Global Carbon Emissions by fossil fuel(Bar Chart)'):
     df = pd.read_csv('data/emissions_global_1751_2019.csv', dtype={"Year": str})
     chart_data = pd.DataFrame(df, columns=["Year", "Emissions fossil fuel", "Emissions solid fuel", "Emissions liquid fuel", "Emissions gas fuel", "Emissions cement production", "Emissions gas flaring", "Emissions per capita(metric tons of carbon)"])
     st.bar_chart(chart_data, x="Year", y=["Emissions fossil fuel", "Emissions solid fuel", "Emissions liquid fuel", "Emissions gas fuel", "Emissions cement production", "Emissions gas flaring", "Emissions per capita(metric tons of carbon)"])
 
-st.subheader('Area chart of global emissions from 1751 to 2019.')
+st.subheader('Area chart of global emissions from 1751 to 2019(metric tons of C).')
 if st.checkbox('Global Carbon Emissions by fossil fuel(Area Chart)'):
     df = pd.read_csv('data/emissions_global_1751_2019.csv', dtype={"Year": str})
     chart_data = pd.DataFrame(df, columns=["Year", "Emissions fossil fuel", "Emissions solid fuel", "Emissions liquid fuel", "Emissions gas fuel", "Emissions cement production", "Emissions gas flaring", "Emissions per capita(metric tons of carbon)"])
