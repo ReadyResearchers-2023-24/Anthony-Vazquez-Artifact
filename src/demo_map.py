@@ -36,12 +36,7 @@ def fill_temp():
         checker = slider
         file2.close()
 fill_temp()
-"""
-data = pd.DataFrame({
-    'value': [2000, 500, 1500],
-    'lat': [37.7749, 34.0522, 40.7128],
-    'lon': [-122.4194, -118.2437, -74.0060]
-})"""
+
 real_data = pd.read_csv('data/temp_file.csv')
 data = pd.DataFrame({
     "Emissions": real_data['Emissions'],

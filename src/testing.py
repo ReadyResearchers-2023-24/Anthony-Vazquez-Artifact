@@ -4,28 +4,6 @@ import numpy as np
 import os
 from collections import defaultdict
 
-#data = 'data/emissions_global_1751_2019.csv'
-headers = ['Year', 'Total carbon emissions from fossil fuel consumption and cement production (million metric tons of C)', 'Carbon emissions from solid fuel consumption', 'Carbon emissions from liquid fuel consumption', 'Carbon emissions from gas fuel consumption', 'Carbon emissions from cement production', 'Carbon emissions from gas flaring', 'Per capita carbon emissions (metric tons of carbon; after 1949 only)']
-
-def csv_to_dict(file):
-    new_dict = {}
-    with open(file, 'r') as f:
-        count = 0
-        for line in f:
-            counter = 0
-            items = line.split(',')
-            if count == 0:
-                for thing in items:
-                    new_dict = thing
-                count += 1
-                print(new_dict)
-            else:
-                for item in items:
-                    new_dict[headers[counter]] = item
-                counter += 1
-    
-    return new_dict
-
 #print(csv_to_dict(data))
 
 yes = 'data/real_data.csv'
@@ -43,8 +21,8 @@ def clean_data():
                 #new_data.append(line)
 
 
-#clean_data()
-#print(new_data)
+clean_data()
+print(new_data)
 
 no = 'data/total_emissions_global_2019.csv'
 
@@ -79,7 +57,7 @@ def real_data():
                         new_list = item[0] + ',' + item[2] + ',' + item[3] + ',' + items[1] + ',' + items[2]
                         file3.write(new_list)
                         file3.close()
-#real_data()
+real_data()
 
 file1 = open('data/come_on.csv', 'r')
 
@@ -162,8 +140,8 @@ file2 = open("data/temp_file.csv", 'a')
 new_data = ''
 for number in slider_options:
     if checker != slider:
-        #os.remove('data/temp_file.csv')
-        #file2 = open("data/temp_file.csv", 'a')
+        os.remove('data/temp_file.csv')
+        file2 = open("data/temp_file.csv", 'a')
         check = 0
         for my_data in file1:
             loop = ''

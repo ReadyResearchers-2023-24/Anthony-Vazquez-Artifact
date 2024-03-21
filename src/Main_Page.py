@@ -11,8 +11,22 @@ def load_lottie_file(filepath: str):
 
 st.sidebar.success("Choose a page from directory above.")
 
+# Linking all of the pages at the top of the page
+st.page_link('Main_Page.py', label="Home Page")
+st.page_link('pages/Emissions_By_Decade.py', label="Page 1: Emissions by Decade")
+st.page_link('pages/P&E_Part_I:_What_IS_Pollution.py', label="Page 2: P&E 1 - What is Pollution")
+st.page_link('pages/P&E_Part_II:_Three_Major_Types_Pollution.py', label="Page 3: P&E 2 - Three Types of Pollution")
+st.page_link('pages/P&E_Part_III:_What_IS_Energy.py', label="Page 4: P&E 3 - What is Energy")
+st.page_link('pages/P&E_Part_IV:_Energy_Creation,_Storage,_&_Transfer.py', label="Page 5: P&E 4 - Energy Creation, Storage & Transfer")
+st.page_link('pages/P&E_Part_V:_Renewable_Energy.py', label="Page 6: P&E 5 - Renewable Energy")
+
 st.header(' ',divider='grey')
 st.title(':blue[Global Pollution Visualized]')
+if st.checkbox(":grey[Click to view videos on climate change and WHY we need change.]"):
+    st.video(data='https://youtu.be/jAa58N4Jlos?si=S_wLMd6HmNN10QHW')
+    st.write(":grey[Video from National Geographic on YouTube.]")
+    st.video(data='https://youtu.be/uFlLDcppwpI?si=UuDe80CmGOiNR4LD')
+    st.write(':[Video from The Telegraph on YouTube.]')
 st.header(' ',divider='grey')
 st.write(' ')
 st.write(' ')
@@ -46,4 +60,7 @@ st.write('The narrative embraces the understanding that monumental shifts happen
 st_lottie(load_lottie_file("animations/climb.json"))
 
 st.write('In essence, this project is persistent in that understanding ones direct impact on the :green[environment] propels humanity towards a :green[sustainable] future. Closing the :red[knowledge gap] surrounding :red[emissions] and :orange[energy use] stands as the foreground for creating a :green[safer and healthier Earth] for future civilizations to thrive. The start towards a better world begins with :green[shared knowledge] and :green[collective action].')
+if st.checkbox(":grey[Click to view another video on climate change.]"):
+    st.video('https://youtu.be/-n4A0BssFd0?si=em97RXyPmX6M4laa')
+    st.write(":grey[Video from Climate-KIC on YouTube.]")
 st.header(' ',divider='grey')
