@@ -22,7 +22,8 @@ st.page_link('pages/P&E_Part_V:_Renewable_Energy.py', label="Page 6: P&E 5 - Ren
 
 # Creating Main Page Title and adding the checkbox where videos on climate change are embeddee
 st.header(' ',divider='grey')
-st.title(':blue[Global Pollution Visualized]')
+st.title('The Global Pollution-Energy Index')
+st.header(':blue[Global Pollution Visualized]')
 if st.checkbox(":grey[Click to view videos on climate change and WHY we need change.]"):
     st.video(data='https://youtu.be/jAa58N4Jlos?si=S_wLMd6HmNN10QHW')
     st.write(":grey[Video from National Geographic on YouTube.]")
