@@ -20,6 +20,7 @@ st.page_link('pages/P&E_Part_III:_What_IS_Energy.py', label="Page 4: P&E 3 - Wha
 st.page_link('pages/P&E_Part_IV:_Energy_Creation,_Storage,_&_Transfer.py', label="Page 5: P&E 4 - Energy Creation, Storage & Transfer")
 st.page_link('pages/P&E_Part_V:_Renewable_Energy.py', label="Page 6: P&E 5 - Renewable Energy")
 
+# Creating Main Page Title and adding the checkbox where videos on climate change are embeddee
 st.header(' ',divider='grey')
 st.title(':blue[Global Pollution Visualized]')
 if st.checkbox(":grey[Click to view videos on climate change and WHY we need change.]"):
